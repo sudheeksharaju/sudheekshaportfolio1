@@ -11,6 +11,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <style>
+    #wdOut{
+      diplay:flex;
+      justify-content:flex-end;
+    }
+      #wd{
+      text-align:right;
+      border:1px solid red;
+      background-color:pink;
+      width:100px;
+    }
+  </style>
 </head>
 
 <body>
@@ -44,15 +56,18 @@
         </div>
     </nav>
   <div style="color: black;" id="catFact"></div>
-  <!-- Paste this in the body tag -->
-  <div id="WD">
-<div id="place"></div>
-<div id="state"></div>
-<div id="time"></div>
- <span>ತಾಪಮಾನ: <span id="temperature">ಡಿಗ್ರಿ ಸೆಲ್ಸಿಯಸ್</span><br>
-<span>ಆರ್ದ್ರತೆ: <span id="humidity"></span><br>
-<span>ವೀಕ್ಷಣೆ ಸಮಯ<span id="observedAt"></span></span>
-</div>
+ <!-- paste in place of the weather divs (wdOut)-->
+ <!-- weather API -->
+  <div id="wdOut">
+    <div id="wd">
+      <div id="place"></div>
+      <div id="state"></div>
+      <div id="time"></div>
+      <span>ತಾಪಮಾನ: <span id="temperature"></span> ಡಿಗ್ರಿಗಳು </span><br>
+      <span>ಆರ್ದ್ರತೆ: <span id="humidity"></span></span><br>
+      <span>ನಿರೀಕ್ಷಿಸಿದ ಸಮಯ: <span id="observedAt"></span></span>
+    </div>
+  </div>
   
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   
